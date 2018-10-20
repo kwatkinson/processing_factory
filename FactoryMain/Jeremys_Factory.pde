@@ -1,11 +1,11 @@
 //hello
 int globalJeremyMoney = 0;
-class JeremyFactory {
+class JeremysGameCodingFacility {
   int xPos = 0;
   int yPos = 0;
   int value = 6;
   int createdAt;
-  JeremyFactory(int initX, int initY ) {
+  JeremysGameCodingFacility(int initX, int initY ) {
     xPos = initX;
     yPos = initY;
     createdAt = millis();
@@ -15,18 +15,18 @@ class JeremyFactory {
     if (millis() - createdAt > 5000) {//current time in miliseconsminus new time
       fill(0, 255, 0);//ready color
       ellipse(xPos, yPos, 100, 100);
-      fill(0, 0, 0);
-      text("im READY", xPos-30, yPos);
+      fill(#FF0000);
+      text("Selling Games", xPos-30, yPos);
       if (onClick()) {//now its safe to call on click because its been 5s and is clickable
         createdAt = millis(); //set to current time so it resets    
         globalJeremyMoney += value;
       }
     } else {
 
-      fill(0, 0, 0);//not ready color
+      fill(#FF0000);//not ready color
       ellipse(xPos, yPos, 100, 100);
       fill(255, 255, 255);
-      text("hello world", xPos-30, yPos);
+      text("Coding Games", xPos-30, yPos);
     }
   }
 
