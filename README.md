@@ -1,5 +1,6 @@
 # processing_factory
 processing project
+go into a folder, right click, and chose "Open terminal here"
 
 git clone  https://github.com/kwatkinson/processing_factory.git
 
